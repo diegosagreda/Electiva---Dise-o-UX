@@ -1,0 +1,86 @@
+.link_activo{
+    text-decoration: underline;
+}
+
+
+.img_principal{
+    width: 85%;
+    border: 4px black solid;
+    border-radius: 15px;
+}
+
+nav a:hover{
+    background-color: orangered;
+}
+
+h2:hover{
+    background-color: orangered;
+    color:white;       
+}
+
+*{
+    margin: 0px;
+}
+
+nav a{
+    display: inline-block;
+    width: 150px;
+    background-color: rgb(107, 35, 34);
+    color: white;
+    border: 2px black solid; /*Grosor Color Estilo: solid, dotted, inset, double ...*/
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px 0px 10px 0px; /*esquina sup-izq, sup-der, inf-der, inf-izq*/
+    padding: 10px;/*margen interna*/
+    margin: 15px; /*margen externa*/
+    box-shadow: 4px 4px 4px rgb(74, 55, 55); /*extension der, extension abajo, desenfoque, color*/
+}
+
+
+
+
+h1{
+    color: white;/*color de letra*/
+    background-color: brown;
+    text-align: center;
+}
+
+h2{
+    color: brown;
+}
+
+body{
+    font-family: "Tahoma";
+    text-align: center;
+    background-color: bisque;
+    
+}
+
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-auto-rows: 400px;
+    grid-gap: 1rem;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    padding-top: 20px;
+  
+ 
+}
+.producto{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+.producto img{
+    width: 280px;
+    height: 300px;
+}
+
+
