@@ -12,17 +12,35 @@ btnCalcular.addEventListener('click', (e) =>{
     const minutos = txtminutos.value;
     const segundos = txtsegundos.value;
     const segundosOperar = txtsegundosOperar.value;
+    const operacion = document.getElementById('operacion').value;
+
+
+
 
     //Pasamos la hora digitada a segundos
     const horasEnSegundos = horas*3600;
     const minutEnSegundos = minutos*60;
+
     //Sumamos los datos para encontrar la hora dada en segundos
     const horaSegundos = parseInt(horasEnSegundos) + parseInt(minutEnSegundos) +parseInt(segundos) + parseInt(segundosOperar);
+    //Restamos los datos
+    const horasRestadas = (parseInt(horasEnSegundos) + parseInt(minutEnSegundos) +parseInt(segundos)) - parseInt(segundosOperar)
 
+    //Hora a  operarar
 
-    const horasFinal    = (Math.floor(horaSegundos / 3600)).toString();
-    const minutosFinal  = (Math.floor(horaSegundos / 60 )%60).toString();
-    const segundosFinal = (Math.round(horaSegundos % 60)).toString();
+    let horaOperar = 0
+
+    //Seleccionamos el tipo de operacion
+
+    if(operacion === 'sumar'){
+        horaOperar = horaSegundos
+    }else{
+        horaOperar = horasRestadas
+    }
+
+    const horasFinal    = (Math.floor(horaOperar / 3600)).toString();
+    const minutosFinal  = (Math.floor(horaOperar / 60 )%60).toString();
+    const segundosFinal = (Math.round(horaOperar % 60)).toString();
 
     form.innerHTML =`${horasFinal} : ${minutosFinal} : ${segundosFinal}`
     
