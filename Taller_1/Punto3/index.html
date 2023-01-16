@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto 3</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Máquina Dispensadora de Helados</h2>
+        <div class="productos">
+            <div class="producto">
+                <div class="producto-imagen">
+                    <img src="https://lh3.googleusercontent.com/gEdLLKenG2pNK4irNFopFR0Xzn2SZ_Dfc2x65-ajLKmnQS0c8LGikjJL5icp171H85aOyavklkXyWjFC7wtb2n2iIF7TmZ-UwyFziCkpq6FjwIM" alt="">
+                </div>
+                <div class="producto-info">
+                    <h3>Helado Artesanal</h3>
+                    <p>Disponibles: <span id="cantidad-artesanal">0</span></p>
+                    <p>Precio : $1800</p>
+                    <div class="acciones">
+                        <button id="comprar-artesanal" class="btn-comprar">Comprar</button>
+                        <button id="helado-artesanal" class="btn-abastecer">Abastecer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="producto-imagen">
+                    <img src="https://cremhelado.com.co/wp-content/uploads/2022/12/cremhelado-chococono.png" alt="">
+                </div>
+                <div class="producto-info">
+                    <h3>Chococono</h3>
+                    <p>Disponibles: <span id="cantidad-chococono">0</span></p>
+                    <p>Precio : $2000</p>
+                    <div class="acciones">
+                        <button id="comprar-chococono" class="btn-comprar">Comprar</button>
+                        <button class="btn-abastecer" id="chococono">Abastecer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="producto-imagen">
+                    <img src="https://exitocol.vtexassets.com/arquivos/ids/13176117/Bocatto-De-Fresa-X-88-gr-103193_a.jpg?v=637899532441170000" alt="">
+                </div>
+                <div class="producto-info">
+                    <h3>Bocato</h3>
+                    <p>Disponibles: <span id="cantidad-bocato">0</span></p>
+                    <p>Precio : $3000</p>
+                    <div class="acciones">
+                        <button class="btn-comprar" id="comprar-bocato">Comprar</button>
+                        <button class="btn-abastecer" id="bocato">Abastecer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="acciones">
+            <button id="total-ventas" class="btn">Valor Total de ventas</button>
+            <button id="unidades-vendidas" class="btn">Unidades vendidas</button>
+        </div>
+       
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
