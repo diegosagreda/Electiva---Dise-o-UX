@@ -1,5 +1,204 @@
+body{
+    background-color: rgb(26, 26, 54);
+}
+.nubes-operacion,.nubes-resultado{
+    display: flex;
+    gap: 20px;
+}
 .nube-1{
     width: 250px;
     height: 200px;
     background-color: aqua;
+}
+.nuber-1{
+    width: 250px;
+    height: 200px;
+    background-color: yellow;
+}
+.nube-2{
+    width: 250px;
+    height: 200px;
+    background-color:aqua;
+}
+.nuber-2{
+    width: 250px;
+    height: 200px;
+    background-color:yellow;
+}
+/* CLOUD*/
+.nube{
+    background-color: aliceblue;
+}
+.nube1{
+    left: 700px;
+    position: absolute;
+}
+.nube img{
+    width: 280px;
+    height: 220px;
+    position: relative;
+}
+.manzanas{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    gap: 5px;
+    position: absolute;
+    top: 80px;
+    left: 70px;
+}
+
+.nubex{
+    background-color: aliceblue;
+}
+.nube1x{
+    left: 100px;
+    position: absolute;
+}
+.nubex img{
+    width: 280px;
+    height: 220px;
+    position: relative;
+}
+.manzanasx{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    gap: 5px;
+    position: absolute;
+    top: 80px;
+    left: 70px;
+}
+.suma{
+    position: relative;
+    left: 470px;
+    top: 100px;
+}
+#operacion{
+    position: relative;
+    left: 470px;
+    color: white;
+    font-size: 60px;
+}
+/*Nubes resultados*/
+.nuber1{
+    background-color: aliceblue;
+}
+.nube1r1{
+    top: 400px;
+    left: 100px;
+    position: absolute;
+   
+}
+.nube1r1:hover,.nube1r2:hover{
+    background-color: greenyellow;
+    border-radius: 50%; 
+}
+.active_nube1r1{
+    top: 400px;
+    left: 100px;
+    position: absolute;
+    background-color: greenyellow;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+.nuber1 img{
+    width: 350px;
+    height: 360px;
+    position: relative;
+}
+.manzanasr1{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    gap: 4px;
+    position: absolute;
+    top: 110px;
+    left: 100px;
+}
+
+.nuber2{
+    background-color: aliceblue;
+}
+.nube1r2{
+    top: 400px;
+    left: 700px;
+    position: absolute;
+}
+.nuber2 img{
+    width: 350px;
+    height: 360px;
+    position: relative;
+}
+.manzanasr2{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    gap: 4px;
+    position: absolute;
+    top: 110px;
+    left: 100px;
+}
+.label-resultados{
+    color: white;
+    display: flex;
+    gap: 570px;
+    position: relative;
+    top: 120px;
+    left: 250px;
+}
+.btns-operacion{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    left: 1200px;
+}
+.container{
+    position: absolute;
+}
+.modal-rta{
+    display: none;
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.ocultar{
+    display: none;
+}
+.modal{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    left: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#btn-continuar{
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: blue;
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#btn-terminar{
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: red;
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#btn-continuar:hover,#btn-terminar:hover, #btn-igual:hover, #btn-reset:hover{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
 }

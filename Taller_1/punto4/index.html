@@ -10,23 +10,69 @@
 <body>
     <div class="container">
         <div class="operacion">
-            <h1>4 + 3 = </h1>
+            <h1 id="operacion"></h1>
         </div>
         <div class="main-container">
             <div class="nubes-operacion">
-                <div id="nube-1">
-                    
-                </div>
-                <div class="suma">
-                    +
-                </div>
-                <div id="nube-2">
 
+                <div class="nubex" id="nube">
+                    <div class="nube1x" id="nube1">
+                        <img src="./img/nubeopera.png" alt="">
+                        <div class="manzanasx" id="nube-1">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="suma">
+                 <img style="width: 80px; height: 80px;" src="./img/mas.png" alt="">
+                </div>
+
+                <div class="nube" id="nube">
+                    <div class="nube1" id="nube1">
+                        <img src="./img/nubeopera.png" alt="">
+                        <div class="manzanas" id="nube-2">
+                            
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+            <div class="label-resultados">
+                <h2 style="font-size: 50px;" id="resultado-1"></h2>
+                <h2 style="font-size: 50px;" id="resultado-2"></h2>
+            </div>
+            <div class="nubes-resultado">
+                <div class="nuber1" id="nuber1">
+                    <div class="nube1r1" id="nube1r1">
+                        <img src="./img/nubea.png" alt="">
+                        <div class="manzanasr1" id="nuber-1">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="nuber2" id="nube">
+                    <div class="nube1r2" id="nube1r2">
+                        <img src="./img/nubea.png" alt="">
+                        <div class="manzanasr2" id="nuber-2">
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button class="">Calcular</button>
-            <div class="nubes-resultado">
-
+            <div class="btns-operacion">
+                <img id="btn-igual" style="width: 100px; height: 100px;" src="./img/igual.png" alt="">
+                <img id="btn-reset" style="width: 100px; height: 100px;"  src="./img/reset.png" alt="">
+            </div>
+        </div>
+    </div>
+   <div class="modal-rta ocultar" id="modal-rta">
+        <div class="modal" id="modal">
+            <img id="imagen-carita" style="width: 300px; height: 250px;" src="./img/feliz.png" alt="">
+            <h2 id="txt-resultado"></h2>
+            <div style="display: flex; gap: 50px;">
+                <button id="btn-continuar">Continuar</button>
+                <button id="btn-terminar">Terminar</button>
             </div>
         </div>
     </div>
