@@ -19,6 +19,7 @@
             
         </div>
     </div>
+
     <div class="carrito-compras" id="carrito-compras">
         <h2 style="text-align: center;">Carrito compras</h2>
         <div id="items-compra">
@@ -29,6 +30,38 @@
             <button id="seguir">Seguir comprando</button>
         </div>
     </div>
+    <div class="modal-factura-inactive" id="modal-factura">
+        <div class="factura">
+            <h2 style="text-align: center; color: green;">Factura de compra</h2>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio Unidad</th>
+                        <th>Precio Total</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla">
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Total: </td>
+                        <td id="precio-total"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="acciones-factura">
+                <button id="pagar-factura">Pagar</button>
+                <button id="cancelar-factura">Cancelar</button>    
+            </div>
+        </div>
+    </div>
+    
     <script src="./script.js"></script>
 </body>
 </html>

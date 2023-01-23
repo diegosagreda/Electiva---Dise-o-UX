@@ -9,6 +9,12 @@ const modal_carrito = document.getElementById('carrito-compras');
 const contenedor_productos = document.getElementById('productos');
 /** Items compras carrito*/
 const items_carrito = document.getElementById('items-compra');
+/**Elementos de factura*/
+const modal_factura = document.getElementById('modal-factura');
+const btn_cancelar_factura = document.getElementById('cancelar-factura')
+const btn_pagar_factura = document.getElementById('pagar-factura');
+const tabla = document.getElementById('tabla');
+const precio_total = document.getElementById('precio-total');
 
 //Cargamos productos desde un archivo Json
 let productos = []
@@ -122,9 +128,33 @@ const cargarProductos = () =>{
     });
    
 }
+/*Renderizamos productos en la factura */
+const getItemFactura = (nombre,cantidad,precio,precioTotal)=> {
+    const item = document.createElement('tr')
+    item.innerHTML = `
+    <tr>
+        <td>${nombre}</td>
+        <td>${cantidad}</td>
+        <td>$${precio}</td>
+        <td>$${precioTotal}</td>
+    </tr>
+    `
+    return item    
+}
+const cargarInformacionFactura = () =>{
+    let precioFacturar = 0
+    carritoCompras.forEach(element => {
+        tabla.appendChild(getItemFactura(element.nombre, element.cantidad, element.precio, parseInt(element.cantidad)*parseFloat(element.precio)))
+        //Calculamos precio total
+        precioFacturar += (parseFloat(element.precio) * parseInt(element.cantidad))
+    });
+    precio_total.innerText =precioFacturar
+}
 setTimeout(()=>{
     cargarProductos()
-},1000)
+},500)
+
+
 
 btn_carrito.addEventListener('click', () =>{
    mostrarCarrito()
@@ -134,6 +164,24 @@ btn_seguir_comprando.addEventListener('click',()=>{
     modal_carrito.classList.remove('carrito-compras-active')  
 })
 btn_pagar_compra.addEventListener('click', ()=>{
-    console.log(carritoCompras)
+    modal_factura.classList.remove('modal-factura-inactive') 
+    modal_factura.classList.add('modal-factura')
+    cargarInformacionFactura()
+
 })
 
+/**Funciones factura*/
+btn_cancelar_factura.addEventListener('click', ()=>{
+    modal_factura.classList.add('modal-factura-inactive')
+    //Limpiamos factura
+    tabla.innerHTML = ''
+})
+btn_pagar_factura.addEventListener('click', ()=>{
+    carritoCompras = []
+    alert('Compra realizada con exito')
+    mostrarCarrito()
+    modal_factura.classList.add('modal-factura-inactive')
+    modal_carrito.classList.add('carrito-compras')
+    //Limpiamos factura
+    tabla.innerHTML = ''
+})

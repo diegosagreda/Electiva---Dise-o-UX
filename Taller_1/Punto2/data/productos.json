@@ -1,17 +1,59 @@
 [
     {
         "id":"1",
-        "nombre":"Computador 1",
+        "nombre":"Azus silver",
         "imagen":"https://servisistemas.com.co/img/p/6/4/6/646.jpg",
-        "precio":"200",
+        "precio":"2000000",
         "cantidad":1
     }
     ,
     {
         "id":"2",
-        "nombre":"Computador 2",
+        "nombre":"Azus Gamming x360Pro",
         "imagen":"https://mejoreslaptops.com/wp-content/uploads/2022/07/Las-mejores-laptops-Asus-2022-800x445.jpg",
-        "precio":"400",
+        "precio":"4000000",
+        "cantidad":1
+    },
+    {
+        "id":"3",
+        "nombre":"Zenbook 13 OLED ",
+        "imagen":"https://d1zktoovjdma6n.cloudfront.net/media/catalog/product/cache/1f12695a694b72c95e2e454d0cc3d779/a/s/asus-zenbook-13-oled_ux325ea-kg697w_01.png",
+        "precio":"6000000",
+        "cantidad":1
+    },
+    {
+        "id":"4",
+        "nombre":"Azus X415MA-BV040TS",
+        "imagen":"https://exitocol.vtexassets.com/arquivos/ids/14533137-800-auto?v=637984077225070000&width=800&height=auto&aspect=true",
+        "precio":"2000000",
+        "cantidad":1
+    },
+    {
+        "id":"5",
+        "nombre":"Azus Ultra BV040TS",
+        "imagen":"https://exitocol.vtexassets.com/arquivos/ids/15989077-800-auto?v=638072364518600000&width=800&height=auto&aspect=true",
+        "precio":"3000000",
+        "cantidad":1
+    },
+    {
+        "id":"6",
+        "nombre":"ASUS Zenbook UX434FAC",
+        "imagen":"https://www.alkosto.com/medias/4718017514019-001-1400Wx1400H?context=bWFzdGVyfGltYWdlc3wyODk0Mzh8aW1hZ2UvanBlZ3xpbWFnZXMvaGZjL2gwMS85MjExMDQwMTcwMDE0LmpwZ3xjZWE1NmQxOGY1NzJhZGM2NGIxNDA4YjFlODkyOTgxMTgzMDgyMWNmMjEwZjM5ZmZmMzM2MmIxYjdiNzI1ZTM4",
+        "precio":"7000000",
+        "cantidad":1
+    },
+    {
+        "id":"7",
+        "nombre":"Acer Nitro",
+        "imagen":"https://i.linio.com/p/55322d7a34ae49456bff7537d5a8bc22-product.webp",
+        "precio":"9000000",
+        "cantidad":1
+    },
+    {
+        "id":"8",
+        "nombre":"Azus Tuf Gamming",
+        "imagen":"https://www.alkomprar.com/medias/4711081724025-001-1400Wx1400H?context=bWFzdGVyfGltYWdlc3wzMTM2OTl8aW1hZ2UvanBlZ3xpbWFnZXMvaDZmL2g4Yy8xMjM5MDAyMjU0NTQzOC5qcGd8MTYwNThhYzY1NzI4YjFiMjAwZjFiMzk5NTZhYzAzNDE3OGRhOWRjYmExZThmOTI1MmI2ZmJmMjc5MGM3NWQyOA",
+        "precio":"8000000",
         "cantidad":1
     }
 ]
