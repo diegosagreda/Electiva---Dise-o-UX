@@ -1,0 +1,17 @@
+[
+    {
+        "id":"1",
+        "nombre":"Computador 1",
+        "imagen":"https://servisistemas.com.co/img/p/6/4/6/646.jpg",
+        "precio":"200",
+        "cantidad":1
+    }
+    ,
+    {
+        "id":"2",
+        "nombre":"Computador 2",
+        "imagen":"https://mejoreslaptops.com/wp-content/uploads/2022/07/Las-mejores-laptops-Asus-2022-800x445.jpg",
+        "precio":"400",
+        "cantidad":1
+    }
+]
