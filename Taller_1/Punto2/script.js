@@ -152,7 +152,7 @@ const cargarInformacionFactura = () =>{
 }
 setTimeout(()=>{
     cargarProductos()
-},500)
+},2000)
 
 
 
